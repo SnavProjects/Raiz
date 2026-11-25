@@ -6,6 +6,14 @@ Sandbox de sobrevivência 2D para navegador, desenvolvido com TypeScript, Phaser
 
 > **Estado: versão inicial jogável (0.1.0), em desenvolvimento.** Não é um lançamento completo. O roadmap continua sendo a referência para recursos e validações pendentes.
 
+## Jogar no navegador
+
+**https://snavprojects.github.io/Raiz/**
+
+O GitHub Pages serve o conteúdo compilado de `dist/` pelo workflow `.github/workflows/pages.yml`, sem servidor de backend. Nesta fase, pushes em `arena/ed95fb2a-raiz` e `main` publicam o jogo; após integrar a implementação, remova a branch de desenvolvimento da lista para publicar apenas a versão de `main`.
+
+No celular, use a orientação horizontal. Os saves ficam no navegador e não são transferidos automaticamente entre a prévia temporária e o GitHub Pages; use exportação/importação para transferi-los.
+
 ## Executar localmente
 
 Requisitos: Node.js 22 e npm. Não é necessário backend, conta ou serviço externo para jogar.
