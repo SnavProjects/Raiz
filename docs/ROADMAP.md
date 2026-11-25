@@ -1,5 +1,12 @@
 # Roadmap — Raiz
 
+
+## Estado verificado da implementação — 2026-11-24
+
+Entrega inicial jogável, ainda **não estável/completa**. TypeScript e build de produção verificados; 76 testes Vitest e 6 testes Playwright (Chromium headless, incluindo touch emulado). As caixas marcadas representam itens verificados dentro desse escopo, não certificam uma fase inteira nem compatibilidade Android real.
+
+Os módulos das fases 1–10 já possuem implementação inicial, mas seus critérios completos permanecem em aberto. Principais lacunas: animações e revisão de arte; rios; geração assíncrona; iluminação local; uso de portas, camas e baús; balanceamento/IA; acessibilidade e tradução completas; memória de edições; desempenho e sessões prolongadas em aparelhos reais. Veja detalhes no README.
+
 ## 1. Objetivo
 
 Este documento organiza as etapas de desenvolvimento do Raiz.
@@ -24,18 +31,18 @@ Preparar a base técnica e documental.
 
 ### Tarefas
 
-- [ ] Criar estrutura do repositório.
-- [ ] Configurar TypeScript.
-- [ ] Configurar Phaser 3.
-- [ ] Configurar Vite.
-- [ ] Configurar Vitest.
-- [ ] Configurar Playwright.
-- [ ] Criar AGENTS.md.
-- [ ] Criar documentação técnica.
-- [ ] Configurar licença MIT.
-- [ ] Definir política de licenciamento dos recursos.
-- [ ] Criar sistema de organização de assets.
-- [ ] Configurar CI.
+- [x] Criar estrutura do repositório.
+- [x] Configurar TypeScript.
+- [x] Configurar Phaser 3.
+- [x] Configurar Vite.
+- [x] Configurar Vitest.
+- [x] Configurar Playwright.
+- [x] Criar AGENTS.md.
+- [x] Criar documentação técnica.
+- [x] Configurar licença MIT.
+- [x] Definir política de licenciamento dos recursos.
+- [x] Criar sistema de organização de assets.
+- [x] Configurar CI.
 
 ### Critérios de conclusão
 
@@ -49,13 +56,13 @@ Construir a base executável do jogo.
 
 ### Tarefas
 
-- [ ] Inicialização da engine.
-- [ ] Gerenciamento de cenas.
-- [ ] Sistema de câmera.
-- [ ] Configuração de renderização.
+- [x] Inicialização da engine.
+- [x] Gerenciamento de cenas.
+- [x] Sistema de câmera.
+- [x] Configuração de renderização.
 - [ ] Sistema de carregamento de recursos.
 - [ ] Gerenciamento de estados.
-- [ ] Sistema de eventos.
+- [x] Sistema de eventos.
 - [ ] Configuração de resolução.
 - [ ] Suporte inicial a dispositivos móveis.
 - [ ] Tratamento de erros.
@@ -72,17 +79,17 @@ Implementar o mundo e sua geração.
 
 ### Tarefas
 
-- [ ] Sistema de tiles.
-- [ ] Sistema de chunks.
-- [ ] Geração por seed.
-- [ ] Geração de terrenos.
+- [x] Sistema de tiles.
+- [x] Sistema de chunks.
+- [x] Geração por seed.
+- [x] Geração de terrenos.
 - [ ] Sistema de biomas.
-- [ ] Geração de cavernas.
+- [x] Geração de cavernas.
 - [ ] Distribuição de recursos.
 - [ ] Lagos e rios.
 - [ ] Carregamento progressivo.
-- [ ] Descarregamento de chunks.
-- [ ] Persistência de modificações.
+- [x] Descarregamento de chunks.
+- [x] Persistência de modificações.
 
 ### Critérios de conclusão
 
@@ -96,16 +103,16 @@ Implementar a experiência de movimentação.
 
 ### Tarefas
 
-- [ ] Jogador.
-- [ ] Movimentação horizontal.
-- [ ] Pulo.
-- [ ] Gravidade.
-- [ ] Colisões.
-- [ ] Câmera acompanhando o jogador.
+- [x] Jogador.
+- [x] Movimentação horizontal.
+- [x] Pulo.
+- [x] Gravidade.
+- [x] Colisões.
+- [x] Câmera acompanhando o jogador.
 - [ ] Interações.
 - [ ] Animações.
-- [ ] Controles de teclado.
-- [ ] Controles de mouse.
+- [x] Controles de teclado.
+- [x] Controles de mouse.
 - [ ] Controles touchscreen.
 - [ ] Configuração dos controles.
 
@@ -121,13 +128,13 @@ Implementar coleta e interação com o ambiente.
 
 ### Tarefas
 
-- [ ] Sistema de blocos.
+- [x] Sistema de blocos.
 - [ ] Identificação de materiais.
-- [ ] Mineração.
+- [x] Mineração.
 - [ ] Coleta.
-- [ ] Drops.
+- [x] Drops.
 - [ ] Ferramentas.
-- [ ] Resistência de materiais.
+- [x] Resistência de materiais.
 - [ ] Feedback visual.
 - [ ] Feedback sonoro.
 
@@ -143,16 +150,16 @@ Implementar gerenciamento de itens.
 
 ### Tarefas
 
-- [ ] Sistema de itens.
-- [ ] Slots.
-- [ ] Empilhamento.
-- [ ] Transferência.
-- [ ] Barra de acesso rápido.
-- [ ] Receitas.
-- [ ] Sistema de crafting.
-- [ ] Validação de ingredientes.
-- [ ] Interface de inventário.
-- [ ] Interface de crafting.
+- [x] Sistema de itens.
+- [x] Slots.
+- [x] Empilhamento.
+- [x] Transferência.
+- [x] Barra de acesso rápido.
+- [x] Receitas.
+- [x] Sistema de crafting.
+- [x] Validação de ingredientes.
+- [x] Interface de inventário.
+- [x] Interface de crafting.
 
 ### Critérios de conclusão
 
@@ -166,15 +173,15 @@ Implementar liberdade de construção.
 
 ### Tarefas
 
-- [ ] Colocação de blocos.
-- [ ] Remoção de blocos.
+- [x] Colocação de blocos.
+- [x] Remoção de blocos.
 - [ ] Validação de posicionamento.
 - [ ] Construção de estruturas.
 - [ ] Materiais diferentes.
 - [ ] Portas.
 - [ ] Iluminação.
 - [ ] Objetos decorativos.
-- [ ] Persistência das construções.
+- [x] Persistência das construções.
 
 ### Critérios de conclusão
 
@@ -194,11 +201,11 @@ Adicionar vida e desafios ao mundo.
 - [ ] Comportamentos.
 - [ ] Movimentação.
 - [ ] Interações.
-- [ ] Saúde.
-- [ ] Fome.
-- [ ] Alimentação.
-- [ ] Recuperação.
-- [ ] Configurações de dificuldade.
+- [x] Saúde.
+- [x] Fome.
+- [x] Alimentação.
+- [x] Recuperação.
+- [x] Configurações de dificuldade.
 
 ### Critérios de conclusão
 
@@ -212,9 +219,9 @@ Completar a ambientação.
 
 ### Tarefas
 
-- [ ] Ciclo de dia e noite.
-- [ ] Amanhecer.
-- [ ] Entardecer.
+- [x] Ciclo de dia e noite.
+- [x] Amanhecer.
+- [x] Entardecer.
 - [ ] Iluminação dinâmica.
 - [ ] Efeitos ambientais.
 - [ ] Música.
@@ -235,19 +242,19 @@ Garantir a preservação dos mundos.
 
 ### Tarefas
 
-- [ ] IndexedDB.
-- [ ] Criação de mundos.
-- [ ] Listagem de mundos.
+- [x] IndexedDB.
+- [x] Criação de mundos.
+- [x] Listagem de mundos.
 - [ ] Salvamento automático.
-- [ ] Salvamento manual.
-- [ ] Carregamento.
-- [ ] Exclusão.
-- [ ] Exportação.
-- [ ] Importação.
-- [ ] Versionamento.
-- [ ] Migrações.
+- [x] Salvamento manual.
+- [x] Carregamento.
+- [x] Exclusão.
+- [x] Exportação.
+- [x] Importação.
+- [x] Versionamento.
+- [x] Migrações.
 - [ ] Recuperação de dados.
-- [ ] Testes de integridade.
+- [x] Testes de integridade.
 
 ### Critérios de conclusão
 
@@ -261,15 +268,15 @@ Concluir os fluxos de utilização.
 
 ### Tarefas
 
-- [ ] Menu principal.
-- [ ] Seleção de mundos.
-- [ ] Criação de mundos.
-- [ ] Configurações.
-- [ ] HUD.
+- [x] Menu principal.
+- [x] Seleção de mundos.
+- [x] Criação de mundos.
+- [x] Configurações.
+- [x] HUD.
 - [ ] Inventário.
 - [ ] Crafting.
 - [ ] Construção.
-- [ ] Pausa.
+- [x] Pausa.
 - [ ] Confirmações.
 - [ ] Feedback de interação.
 - [ ] Acessibilidade.
@@ -287,11 +294,11 @@ Preparar o jogo para distribuição.
 
 ### Tarefas
 
-- [ ] Testes unitários.
-- [ ] Testes de integração.
-- [ ] Testes de navegador.
-- [ ] Testes de salvamento.
-- [ ] Testes de geração.
+- [x] Testes unitários.
+- [x] Testes de integração.
+- [x] Testes de navegador.
+- [x] Testes de salvamento.
+- [x] Testes de geração.
 - [ ] Testes de controles móveis.
 - [ ] Testes de desempenho.
 - [ ] Testes de sessões prolongadas.
@@ -314,15 +321,15 @@ Disponibilizar uma versão estável e documentada.
 
 ### Tarefas
 
-- [ ] Preparar build de produção.
+- [x] Preparar build de produção.
 - [ ] Configurar hospedagem.
 - [ ] Preparar página oficial.
-- [ ] Atualizar README.
+- [x] Atualizar README.
 - [ ] Publicar changelog.
-- [ ] Publicar créditos.
+- [x] Publicar créditos.
 - [ ] Revisar licenças.
-- [ ] Documentar requisitos.
-- [ ] Preparar instruções de contribuição.
+- [x] Documentar requisitos.
+- [x] Preparar instruções de contribuição.
 - [ ] Publicar versão inicial.
 
 ### Critérios de conclusão

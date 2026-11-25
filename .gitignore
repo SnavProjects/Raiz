@@ -1,0 +1,15 @@
+# Dependências e artefatos de build
+node_modules/
+dist/
+coverage/
+
+# Testes e relatórios
+playwright-report/
+test-results/
+.playwright-cli/
+
+# Cache e ambiente
+.vite/
+.cache/
+*.log
+.DS_Store
